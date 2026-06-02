@@ -1,7 +1,6 @@
 {
-  "name": "email-setup-service-bot",
+  "name": "osm-mail-shop-bot",
   "version": "1.0.0",
-  "description": "Telegram bot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
