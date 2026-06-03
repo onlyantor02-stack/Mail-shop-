@@ -799,16 +799,22 @@ bot.onText(/\/rejectDeposit (.+)/, (msg, match) => {
 
 const PORT = process.env.PORT || 3000;
 
-http
-  .createServer((req, res) => {
-    res.writeHead(200, {
-      "Content-Type": "text/plain"
-    });
-
-    res.end("OSM Token Shop Bot Running");
-  })
-  .listen(PORT, () => {
-    console.log("Server running on port " + PORT);
+const server = http.createServer((req, res) => {
+  res.writeHead(200, {
+    "Content-Type": "text/plain"
   });
+
+  res.end("OSM Token Shop Bot Running");
+});
+
+server.listen(PORT, () => {
+  console.log("Server running on port " + PORT);
+});
+
+setInterval(() => {
+  try {
+    console.log("Bot keep alive:", new Date().toLocaleTimeString());
+  } catch (e) {}
+}, 60000);
 
 console.log("OSM Token Shop Bot Running...");
