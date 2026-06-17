@@ -4,7 +4,7 @@ const path = require("path");
 const TelegramBot = require("node-telegram-bot-api");
 const XLSX = require("xlsx");
 
-const TOKEN = "8750812368:AAGlU5SdbBzkuNspz0jdwRDy7r9g3hcGTCs";
+const TOKEN = "8915029214:AAHU5xy_FpP2jrxKOfb37PP5fmk5nqq7gi4";
 const ADMIN_ID = "6705979177";
 const CHANNEL_ID = "-1003933137706"; 
 const CHANNEL_LINK = "https://t.me/osmmailshopupdate";
